@@ -7,6 +7,7 @@
 //
 
 #import "ViewController.h"
+#import "TutorialVC.h"
 
 @interface ViewController ()
 
@@ -16,12 +17,13 @@
 
 - (void)viewDidLoad {
     [super viewDidLoad];
-    // Do any additional setup after loading the view, typically from a nib.
+    _image.layer.cornerRadius = _image.frame.size.width / 2;
+    _image.clipsToBounds = YES;
 }
 
-- (void)didReceiveMemoryWarning {
-    [super didReceiveMemoryWarning];
-    // Dispose of any resources that can be recreated.
+- (IBAction)keyboard:(id)sender {
+    TutorialVC *vc = [[TutorialVC alloc] init];
+    [self presentViewController:vc animated:YES completion:nil];
 }
 
 @end

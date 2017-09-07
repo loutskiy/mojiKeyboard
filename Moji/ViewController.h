@@ -10,6 +10,8 @@
 
 @interface ViewController : UIViewController
 
+@property (weak, nonatomic) IBOutlet UIImageView *image;
+- (IBAction)keyboard:(id)sender;
 
 @end
 

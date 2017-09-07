@@ -1,0 +1,113 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="11201" systemVersion="16A320" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES">
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="11161"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="STKeyboard">
+            <connections>
+                <outlet property="informationView" destination="NGY-kN-Ha7" id="Ebl-OH-aa2"/>
+                <outlet property="stickersCollectionView" destination="ihp-Aa-DCo" id="VHc-Bj-wOZ"/>
+                <outlet property="view" destination="i5M-Pr-FkT" id="sfx-zR-JGt"/>
+            </connections>
+        </placeholder>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view clearsContextBeforeDrawing="NO" contentMode="scaleToFill" id="i5M-Pr-FkT">
+            <rect key="frame" x="0.0" y="0.0" width="320" height="220"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <collectionView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" dataMode="none" translatesAutoresizingMaskIntoConstraints="NO" id="ihp-Aa-DCo">
+                    <color key="backgroundColor" cocoaTouchSystemColor="groupTableViewBackgroundColor"/>
+                    <constraints>
+                        <constraint firstAttribute="height" constant="220" id="W0S-46-ijq"/>
+                    </constraints>
+                    <collectionViewFlowLayout key="collectionViewLayout" minimumLineSpacing="10" minimumInteritemSpacing="10" id="zKh-1N-1Tq">
+                        <size key="itemSize" width="65" height="65"/>
+                        <size key="headerReferenceSize" width="0.0" height="0.0"/>
+                        <size key="footerReferenceSize" width="0.0" height="0.0"/>
+                        <inset key="sectionInset" minX="5" minY="10" maxX="5" maxY="10"/>
+                    </collectionViewFlowLayout>
+                    <connections>
+                        <outlet property="delegate" destination="zKh-1N-1Tq" id="Q2c-mL-wzR"/>
+                    </connections>
+                </collectionView>
+                <view contentMode="scaleToFill" misplaced="YES" translatesAutoresizingMaskIntoConstraints="NO" id="NGY-kN-Ha7">
+                    <frame key="frameInset" width="320" height="220"/>
+                    <subviews>
+                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" text="Copied to the clipboard! Now tap and paste into the message field" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="t1T-dL-O1E">
+                            <frame key="frameInset" minX="9" minY="266" width="304" height="49"/>
+                            <constraints>
+                                <constraint firstAttribute="height" constant="49" id="bc5-FF-XRS"/>
+                                <constraint firstAttribute="width" constant="304" id="vXA-gr-F1l"/>
+                            </constraints>
+                            <fontDescription key="fontDescription" type="system" pointSize="15"/>
+                            <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                            <nil key="highlightedColor"/>
+                        </label>
+                    </subviews>
+                    <color key="backgroundColor" cocoaTouchSystemColor="groupTableViewBackgroundColor"/>
+                    <constraints>
+                        <constraint firstItem="t1T-dL-O1E" firstAttribute="centerX" secondItem="NGY-kN-Ha7" secondAttribute="centerX" id="iGJ-Pu-Tvd"/>
+                        <constraint firstAttribute="height" relation="greaterThanOrEqual" constant="220" id="kzN-vu-MeG"/>
+                        <constraint firstItem="t1T-dL-O1E" firstAttribute="centerY" secondItem="NGY-kN-Ha7" secondAttribute="centerY" constant="5.5" id="rAi-EJ-nNg"/>
+                    </constraints>
+                </view>
+                <view contentMode="scaleToFill" misplaced="YES" translatesAutoresizingMaskIntoConstraints="NO" id="CEr-Qj-vEW">
+                    <frame key="frameInset" minY="175" width="320" height="45"/>
+                    <subviews>
+                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" text="someLabel" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="3T6-Vi-Whz">
+                            <frame key="frameInset" minX="52" minY="12" width="218" height="21"/>
+                            <constraints>
+                                <constraint firstAttribute="width" constant="218" id="QlK-gp-MUV"/>
+                            </constraints>
+                            <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                            <color key="textColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                            <nil key="highlightedColor"/>
+                        </label>
+                        <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="nqx-D3-M3x">
+                            <constraints>
+                                <constraint firstAttribute="height" constant="19" id="YID-2T-QPi"/>
+                                <constraint firstAttribute="width" constant="19" id="o4y-X2-8Sc"/>
+                            </constraints>
+                            <state key="normal" image="internet-1"/>
+                            <connections>
+                                <action selector="changeKeyboard:" destination="-1" eventType="touchUpInside" id="q2Y-IH-HSA"/>
+                            </connections>
+                        </button>
+                    </subviews>
+                    <color key="backgroundColor" red="0.66666666666666663" green="0.66666666666666663" blue="0.66666666666666663" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                    <constraints>
+                        <constraint firstItem="nqx-D3-M3x" firstAttribute="top" secondItem="CEr-Qj-vEW" secondAttribute="top" constant="13" id="Sik-Jk-fN9"/>
+                        <constraint firstItem="3T6-Vi-Whz" firstAttribute="top" secondItem="CEr-Qj-vEW" secondAttribute="top" constant="12" id="bU8-fh-jlq"/>
+                        <constraint firstAttribute="height" constant="45" id="miN-2R-bTq"/>
+                        <constraint firstAttribute="bottom" secondItem="3T6-Vi-Whz" secondAttribute="bottom" constant="12" id="rki-9W-Ea9"/>
+                        <constraint firstItem="3T6-Vi-Whz" firstAttribute="centerX" secondItem="CEr-Qj-vEW" secondAttribute="centerX" id="tjL-4k-Cen"/>
+                        <constraint firstAttribute="bottom" secondItem="nqx-D3-M3x" secondAttribute="bottom" constant="13" id="uek-E7-l1d"/>
+                        <constraint firstItem="nqx-D3-M3x" firstAttribute="leading" secondItem="CEr-Qj-vEW" secondAttribute="leading" constant="10" id="upc-7v-8ND"/>
+                    </constraints>
+                </view>
+            </subviews>
+            <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+            <constraints>
+                <constraint firstItem="NGY-kN-Ha7" firstAttribute="bottom" secondItem="ihp-Aa-DCo" secondAttribute="bottom" constant="44" id="BxH-GW-WvD"/>
+                <constraint firstItem="NGY-kN-Ha7" firstAttribute="leading" secondItem="ihp-Aa-DCo" secondAttribute="leading" id="N7O-Q2-mTu"/>
+                <constraint firstItem="NGY-kN-Ha7" firstAttribute="trailing" secondItem="ihp-Aa-DCo" secondAttribute="trailing" id="NMH-cb-Ymc"/>
+                <constraint firstItem="NGY-kN-Ha7" firstAttribute="bottom" secondItem="CEr-Qj-vEW" secondAttribute="bottom" id="Pnc-7O-vCY"/>
+                <constraint firstAttribute="trailing" secondItem="NGY-kN-Ha7" secondAttribute="trailing" id="Rjb-0a-ZYS"/>
+                <constraint firstItem="NGY-kN-Ha7" firstAttribute="top" secondItem="i5M-Pr-FkT" secondAttribute="top" id="T65-zm-PWk"/>
+                <constraint firstAttribute="bottom" secondItem="NGY-kN-Ha7" secondAttribute="bottom" id="TDC-Fp-8ZO"/>
+                <constraint firstItem="NGY-kN-Ha7" firstAttribute="leading" secondItem="i5M-Pr-FkT" secondAttribute="leading" id="TU7-bf-4DV"/>
+                <constraint firstItem="NGY-kN-Ha7" firstAttribute="trailing" secondItem="CEr-Qj-vEW" secondAttribute="trailing" id="c98-iS-eVG"/>
+                <constraint firstItem="NGY-kN-Ha7" firstAttribute="top" secondItem="ihp-Aa-DCo" secondAttribute="top" id="e35-Tt-7R4"/>
+                <constraint firstItem="NGY-kN-Ha7" firstAttribute="leading" secondItem="CEr-Qj-vEW" secondAttribute="leading" id="iqf-r3-vxw"/>
+            </constraints>
+            <freeformSimulatedSizeMetrics key="simulatedDestinationMetrics"/>
+            <point key="canvasLocation" x="59" y="96"/>
+        </view>
+    </objects>
+    <resources>
+        <image name="internet-1" width="29" height="29"/>
+    </resources>
+</document>

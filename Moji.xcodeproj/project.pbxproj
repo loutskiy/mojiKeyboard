@@ -13,7 +13,40 @@
 		02206DEA1D6F922A00F1D58F /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 02206DE81D6F922A00F1D58F /* Main.storyboard */; };
 		02206DEC1D6F922A00F1D58F /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 02206DEB1D6F922A00F1D58F /* Assets.xcassets */; };
 		02206DEF1D6F922A00F1D58F /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 02206DED1D6F922A00F1D58F /* LaunchScreen.storyboard */; };
+		02206DF81D6F966C00F1D58F /* ABCIntroView.m in Sources */ = {isa = PBXBuildFile; fileRef = 02206DF71D6F966C00F1D58F /* ABCIntroView.m */; };
+		02206DFB1D6F9A0300F1D58F /* TutorialVC.m in Sources */ = {isa = PBXBuildFile; fileRef = 02206DFA1D6F9A0300F1D58F /* TutorialVC.m */; };
+		533968BA1D73749300033651 /* KeyboardViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 533968B91D73749300033651 /* KeyboardViewController.m */; };
+		533968BE1D73749300033651 /* mojiKeyboard.appex in Embed App Extensions */ = {isa = PBXBuildFile; fileRef = 533968B61D73749300033651 /* mojiKeyboard.appex */; settings = {ATTRIBUTES = (RemoveHeadersOnCopy, ); }; };
+		533968C91D75F90B00033651 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 02206DEB1D6F922A00F1D58F /* Assets.xcassets */; };
+		533968CB1D75FB4A00033651 /* stickerCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 533968CA1D75FB4A00033651 /* stickerCell.xib */; };
+		533968CE1D75FB7E00033651 /* stickerCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 533968CD1D75FB7E00033651 /* stickerCell.m */; };
+		533968D81D760D4A00033651 /* STKeyboard.m in Sources */ = {isa = PBXBuildFile; fileRef = 533968D61D760D4A00033651 /* STKeyboard.m */; };
+		533968D91D760D4A00033651 /* STKeyboard.xib in Resources */ = {isa = PBXBuildFile; fileRef = 533968D71D760D4A00033651 /* STKeyboard.xib */; };
 /* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		533968BC1D73749300033651 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 02206DD41D6F922A00F1D58F /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 533968B51D73749300033651;
+			remoteInfo = mojiKeyboard;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXCopyFilesBuildPhase section */
+		533968C21D73749300033651 /* Embed App Extensions */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "";
+			dstSubfolderSpec = 13;
+			files = (
+				533968BE1D73749300033651 /* mojiKeyboard.appex in Embed App Extensions */,
+			);
+			name = "Embed App Extensions";
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXCopyFilesBuildPhase section */
 
 /* Begin PBXFileReference section */
 		02206DDC1D6F922A00F1D58F /* Moji.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Moji.app; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -26,10 +59,31 @@
 		02206DEB1D6F922A00F1D58F /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		02206DEE1D6F922A00F1D58F /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		02206DF01D6F922A00F1D58F /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		02206DF61D6F966C00F1D58F /* ABCIntroView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ABCIntroView.h; sourceTree = "<group>"; };
+		02206DF71D6F966C00F1D58F /* ABCIntroView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ABCIntroView.m; sourceTree = "<group>"; };
+		02206DF91D6F9A0300F1D58F /* TutorialVC.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TutorialVC.h; sourceTree = "<group>"; };
+		02206DFA1D6F9A0300F1D58F /* TutorialVC.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TutorialVC.m; sourceTree = "<group>"; };
+		533968B61D73749300033651 /* mojiKeyboard.appex */ = {isa = PBXFileReference; explicitFileType = "wrapper.app-extension"; includeInIndex = 0; path = mojiKeyboard.appex; sourceTree = BUILT_PRODUCTS_DIR; };
+		533968B81D73749300033651 /* KeyboardViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = KeyboardViewController.h; sourceTree = "<group>"; };
+		533968B91D73749300033651 /* KeyboardViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = KeyboardViewController.m; sourceTree = "<group>"; };
+		533968BB1D73749300033651 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		533968CA1D75FB4A00033651 /* stickerCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = stickerCell.xib; sourceTree = "<group>"; };
+		533968CC1D75FB7E00033651 /* stickerCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = stickerCell.h; sourceTree = "<group>"; };
+		533968CD1D75FB7E00033651 /* stickerCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = stickerCell.m; sourceTree = "<group>"; };
+		533968D51D760D4A00033651 /* STKeyboard.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = STKeyboard.h; sourceTree = "<group>"; };
+		533968D61D760D4A00033651 /* STKeyboard.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = STKeyboard.m; sourceTree = "<group>"; };
+		533968D71D760D4A00033651 /* STKeyboard.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = STKeyboard.xib; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
 		02206DD91D6F922A00F1D58F /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		533968B31D73749300033651 /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
@@ -43,6 +97,7 @@
 			isa = PBXGroup;
 			children = (
 				02206DDE1D6F922A00F1D58F /* Moji */,
+				533968B71D73749300033651 /* mojiKeyboard */,
 				02206DDD1D6F922A00F1D58F /* Products */,
 			);
 			sourceTree = "<group>";
@@ -51,6 +106,7 @@
 			isa = PBXGroup;
 			children = (
 				02206DDC1D6F922A00F1D58F /* Moji.app */,
+				533968B61D73749300033651 /* mojiKeyboard.appex */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -58,10 +114,14 @@
 		02206DDE1D6F922A00F1D58F /* Moji */ = {
 			isa = PBXGroup;
 			children = (
+				02206DF61D6F966C00F1D58F /* ABCIntroView.h */,
+				02206DF71D6F966C00F1D58F /* ABCIntroView.m */,
 				02206DE21D6F922A00F1D58F /* AppDelegate.h */,
 				02206DE31D6F922A00F1D58F /* AppDelegate.m */,
 				02206DE51D6F922A00F1D58F /* ViewController.h */,
 				02206DE61D6F922A00F1D58F /* ViewController.m */,
+				02206DF91D6F9A0300F1D58F /* TutorialVC.h */,
+				02206DFA1D6F9A0300F1D58F /* TutorialVC.m */,
 				02206DE81D6F922A00F1D58F /* Main.storyboard */,
 				02206DEB1D6F922A00F1D58F /* Assets.xcassets */,
 				02206DED1D6F922A00F1D58F /* LaunchScreen.storyboard */,
@@ -79,6 +139,22 @@
 			name = "Supporting Files";
 			sourceTree = "<group>";
 		};
+		533968B71D73749300033651 /* mojiKeyboard */ = {
+			isa = PBXGroup;
+			children = (
+				533968B81D73749300033651 /* KeyboardViewController.h */,
+				533968B91D73749300033651 /* KeyboardViewController.m */,
+				533968D51D760D4A00033651 /* STKeyboard.h */,
+				533968D61D760D4A00033651 /* STKeyboard.m */,
+				533968D71D760D4A00033651 /* STKeyboard.xib */,
+				533968CC1D75FB7E00033651 /* stickerCell.h */,
+				533968CD1D75FB7E00033651 /* stickerCell.m */,
+				533968CA1D75FB4A00033651 /* stickerCell.xib */,
+				533968BB1D73749300033651 /* Info.plist */,
+			);
+			path = mojiKeyboard;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -89,15 +165,34 @@
 				02206DD81D6F922A00F1D58F /* Sources */,
 				02206DD91D6F922A00F1D58F /* Frameworks */,
 				02206DDA1D6F922A00F1D58F /* Resources */,
+				533968C21D73749300033651 /* Embed App Extensions */,
 			);
 			buildRules = (
 			);
 			dependencies = (
+				533968BD1D73749300033651 /* PBXTargetDependency */,
 			);
 			name = Moji;
 			productName = Moji;
 			productReference = 02206DDC1D6F922A00F1D58F /* Moji.app */;
 			productType = "com.apple.product-type.application";
+		};
+		533968B51D73749300033651 /* mojiKeyboard */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 533968C11D73749300033651 /* Build configuration list for PBXNativeTarget "mojiKeyboard" */;
+			buildPhases = (
+				533968B21D73749300033651 /* Sources */,
+				533968B31D73749300033651 /* Frameworks */,
+				533968B41D73749300033651 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = mojiKeyboard;
+			productName = mojiKeyboard;
+			productReference = 533968B61D73749300033651 /* mojiKeyboard.appex */;
+			productType = "com.apple.product-type.app-extension";
 		};
 /* End PBXNativeTarget section */
 
@@ -110,6 +205,9 @@
 				TargetAttributes = {
 					02206DDB1D6F922A00F1D58F = {
 						CreatedOnToolsVersion = 7.3.1;
+					};
+					533968B51D73749300033651 = {
+						CreatedOnToolsVersion = 7.3;
 					};
 				};
 			};
@@ -127,6 +225,7 @@
 			projectRoot = "";
 			targets = (
 				02206DDB1D6F922A00F1D58F /* Moji */,
+				533968B51D73749300033651 /* mojiKeyboard */,
 			);
 		};
 /* End PBXProject section */
@@ -142,6 +241,16 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
+		533968B41D73749300033651 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				533968C91D75F90B00033651 /* Assets.xcassets in Resources */,
+				533968CB1D75FB4A00033651 /* stickerCell.xib in Resources */,
+				533968D91D760D4A00033651 /* STKeyboard.xib in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 /* End PBXResourcesBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
@@ -149,13 +258,33 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				02206DFB1D6F9A0300F1D58F /* TutorialVC.m in Sources */,
 				02206DE71D6F922A00F1D58F /* ViewController.m in Sources */,
 				02206DE41D6F922A00F1D58F /* AppDelegate.m in Sources */,
+				02206DF81D6F966C00F1D58F /* ABCIntroView.m in Sources */,
 				02206DE11D6F922A00F1D58F /* main.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
+		533968B21D73749300033651 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				533968D81D760D4A00033651 /* STKeyboard.m in Sources */,
+				533968BA1D73749300033651 /* KeyboardViewController.m in Sources */,
+				533968CE1D75FB7E00033651 /* stickerCell.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 /* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		533968BD1D73749300033651 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 533968B51D73749300033651 /* mojiKeyboard */;
+			targetProxy = 533968BC1D73749300033651 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
 
 /* Begin PBXVariantGroup section */
 		02206DE81D6F922A00F1D58F /* Main.storyboard */ = {
@@ -281,6 +410,28 @@
 			};
 			name = Release;
 		};
+		533968BF1D73749300033651 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				INFOPLIST_FILE = mojiKeyboard/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @executable_path/../../Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = ru.lwts.Moji.mojiKeyboard;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SKIP_INSTALL = YES;
+			};
+			name = Debug;
+		};
+		533968C01D73749300033651 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				INFOPLIST_FILE = mojiKeyboard/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @executable_path/../../Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = ru.lwts.Moji.mojiKeyboard;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SKIP_INSTALL = YES;
+			};
+			name = Release;
+		};
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
@@ -300,6 +451,16 @@
 				02206DF51D6F922A00F1D58F /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		533968C11D73749300033651 /* Build configuration list for PBXNativeTarget "mojiKeyboard" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				533968BF1D73749300033651 /* Debug */,
+				533968C01D73749300033651 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
